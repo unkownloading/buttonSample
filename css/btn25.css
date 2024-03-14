@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #0c2461;
+}
+
+.container {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn {
+  position: relative;
+  width: 155px;
+  height: 50px;
+  margin: 20px;
+}
+
+.btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.051);
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(250, 52, 52, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+.btn:hover a {
+  letter-spacing: 3px;
+}
+
+.btn a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.149)), to(transparent));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.149), transparent);
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+a:hover::before {
+  -webkit-transform: skewX(45deg) translateX(200%);
+          transform: skewX(45deg) translateX(200%);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #ff0461;
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.btn:hover::before {
+  bottom: 0px;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #ff0461;
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.btn:hover::after {
+  top: 0px;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.btn:nth-child(1):before,
+.btn:nth-child(1):after {
+  background: #ff1f72;
+  -webkit-box-shadow: 0 0 5px #ff1f72, 0 0 15px #ff1f72, 0 0 30px #ff1f72, 0 0 60px #ff1f72;
+          box-shadow: 0 0 5px #ff1f72, 0 0 15px #ff1f72, 0 0 30px #ff1f72, 0 0 60px #ff1f72;
+}
+
+.btn:nth-child(2):before,
+.btn:nth-child(2):after {
+  background: #ff1f72;
+  -webkit-box-shadow: 0 0 5px #ff1f72, 0 0 15px #ff1f72, 0 0 30px #ff1f72, 0 0 60px #ff1f72;
+          box-shadow: 0 0 5px #ff1f72, 0 0 15px #ff1f72, 0 0 30px #ff1f72, 0 0 60px #ff1f72;
+}
+
+.btn:nth-child(3):before,
+.btn:nth-child(3):after {
+  background: #ff1f72;
+  -webkit-box-shadow: 0 0 5px #ff1f72, 0 0 15px #ff1f72, 0 0 30px #ff1f72, 0 0 60px #ff1f72;
+          box-shadow: 0 0 5px #ff1f72, 0 0 15px #ff1f72, 0 0 30px #ff1f72, 0 0 60px #ff1f72;
+}

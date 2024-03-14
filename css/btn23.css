@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+body {
+  height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #250e74;
+  border: 4px solid #250e74;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid #250e74;
+  border-bottom: 40px solid #250e74;
+  border-right: 40px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: -1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+a:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid #250e74;
+  border-bottom: 40px solid #250e74;
+  border-left: 40px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: -1;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+a:hover:after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+a:hover {
+  color: white;
+}
